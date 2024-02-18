@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementler</title>
+    <style>
+        a:link{ /* Verdiğimiz bağlantı henüz hiç ziyaret edilmemişse renk ayarlaması yapılır ya da başka bir görünüm. */
+            color: red;
+        }
+        a:visited{ /* Verdiğimiz bağlantıya eğer daha önceden bir keregiriş yapıp ziyaret edildiyse burdan nasıl görüneceği rengi falan ayarlanır. */
+            color: orange;
+        }
+        a:hover{ /* Verdiğimiz bağlantının bağlantı olduğunu anlamaları için üzerine geldiğinde değişiklik gösterilecek özellikler yapılır. */
+            background-color: aqua;
+            font-size: 30px;
+            border: 1px solid black;
+        }
+        a:active{ /* Bağlantıya henüz girmemiş ama basılı tutulurken nasıl görüneceğini gösteren işleler. */
+            color: teal;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="https:/www.youtube.com">Youtube'a Gider...</a>
+</body>
+</html>
